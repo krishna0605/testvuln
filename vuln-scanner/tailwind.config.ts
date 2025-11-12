@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         "primary": "#0ea5e9",
-        "background-light": "#f5f7f8",
+        "background-light": "#f0f2f5",
         "background-dark": "#0B0D12",
         "heading": "#F0F0F0",
         "body-text": "#A0A0B0",
@@ -21,6 +21,14 @@ const config: Config = {
         "severity-medium": "#eab308",
         "severity-low": "#3b82f6",
         "severity-info": "#6b7280",
+        "vuln-bg": "#0B0D12",
+        "vuln-accent": "#0ea5e9",
+        "vuln-text-primary": "#F0F0F0",
+        "vuln-text-secondary": "#A0A0B0",
+        "text-primary-dark": "#F0F0F0",
+        "text-secondary-dark": "#A0A0B0",
+        "surface-dark": "rgba(20, 24, 38, 0.5)",
+        "border-dark": "rgba(45, 187, 249, 0.2)"
       },
       fontFamily: {
         "display": ["Space Grotesk", "sans-serif"]
@@ -39,6 +47,8 @@ const config: Config = {
         'red-glow': '0 0 8px 0 rgba(239, 68, 68, 0.6)',
         'yellow-glow': '0 0 8px 0 rgba(234, 179, 8, 0.6)',
         'cyan-glow-hover': '0 0 15px 0 rgba(14, 165, 233, 0.6)',
+        'glow-primary': '0 0 15px 5px rgba(14, 165, 233, 0.3), 0 0 5px 1px rgba(14, 165, 233, 0.2)',
+        'glow-primary-sm': '0 0 8px 2px rgba(14, 165, 233, 0.25)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
