@@ -9,16 +9,15 @@ export default defineConfig({
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
-        // Use prepared auth state.
         storageState: 'playwright/.auth/user.json',
-        baseURL: 'http://localhost:3000',
+        baseURL: 'http://localhost:3100',
       },
       dependencies: ['setup'],
     },
   ],
   webServer: {
-    command: 'npm run dev',
-    url: 'http://localhost:3000',
+    command: 'npm run dev -- -p 3100',
+    url: 'http://localhost:3100',
     reuseExistingServer: !process.env.CI,
     timeout: 120 * 1000,
   },

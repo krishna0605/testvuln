@@ -11,8 +11,7 @@ const LoginPage = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Here you would typically handle authentication
-    // For now, we'll just redirect to the dashboard
+    document.cookie = 'auth_token=dummy_token; Path=/; SameSite=Lax';
     router.push('/dashboard');
   };
 

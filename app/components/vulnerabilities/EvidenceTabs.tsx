@@ -11,10 +11,10 @@ const EvidenceTabs = () => {
 <span className="text-gray-400">Host:</span> <span className="text-yellow-400">example.com</span>
 <span className="text-gray-400">Content-Type:</span> <span className="text-yellow-400">application/json</span>
 
-{
+{'{'}
   <span className="text-gray-400">"username":</span> <span className="text-cyan-300">"admin' OR '1'='1"</span>,
   <span className="text-gray-400">"password":</span> <span className="text-yellow-400">"password"</span>
-}</code></pre>
+{'}'}</code></pre>
       </div>
     </div>
   );

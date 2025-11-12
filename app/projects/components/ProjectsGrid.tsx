@@ -1,6 +1,12 @@
 import { ProjectCard } from '@/app/projects/components/ProjectCard';
 
-const projects = [
+const projects: {
+  name: string;
+  domain: string;
+  status: 'Completed' | 'Scanning' | 'Idle';
+  vulnerabilities: { critical?: number; high?: number; medium?: number; progress?: number };
+  team: string[];
+}[] = [
   {
     name: 'E-commerce Platform',
     domain: 'api.ecom.vulnscanner.io',

@@ -18,7 +18,7 @@ const FindingCard = ({ finding }: { finding: any }) => {
       <div className="flex flex-col gap-3">
         <div className="flex flex-wrap items-center gap-4">
           <h3 className="text-heading font-bold text-lg">{finding.title}</h3>
-          <span className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold ring-1 ring-inset ${severityColor[finding.severity]}`}>
+          <span className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold ring-1 ring-inset ${severityColor[finding.severity as keyof typeof severityColor]}`}>
             {finding.severity}
           </span>
         </div>
@@ -26,7 +26,7 @@ const FindingCard = ({ finding }: { finding: any }) => {
         <p className="text-body-text text-sm max-w-prose">{finding.description}</p>
       </div>
       <div className="flex flex-col md:items-end justify-between gap-4 h-full">
-        <span className={`inline-flex w-fit items-center rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset ${statusColor[finding.status]}`}>
+        <span className={`inline-flex w-fit items-center rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset ${statusColor[finding.status as keyof typeof statusColor]}`}>
           {finding.status}
         </span>
         <Link href={`/vulnerabilities/${finding.id}`} className="flex min-w-[84px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-primary hover:bg-primary/30 group-hover:bg-primary group-hover:text-white transition-colors text-sm font-bold">
