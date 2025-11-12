@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         "primary": "#0ea5e9",
-        "background-light": "#f0f2f5",
+        "background-light": "#f5f7f8",
         "background-dark": "#0B0D12",
         "heading": "#F0F0F0",
         "body-text": "#A0A0B0",
@@ -31,7 +31,7 @@ const config: Config = {
         "border-dark": "rgba(45, 187, 249, 0.2)"
       },
       fontFamily: {
-        "display": ["Space Grotesk", "sans-serif"]
+        "display": ["var(--font-space-grotesk)", "sans-serif"]
       },
       borderRadius: {
         "DEFAULT": "0.5rem",

@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${spaceGrotesk.variable} bg-background-dark font-display text-text-body`}>
+      <body className={`${spaceGrotesk.variable} bg-background-dark font-display text-body-text`}>
         <QueryProvider>
           <div className="relative flex min-h-screen w-full flex-col">
             <Header />
