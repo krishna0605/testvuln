@@ -1,4 +1,4 @@
-export const ProjectsList = () => {
+export function ProjectsList() {
   return (
     <div>
       <div className="flex justify-between items-center mb-4 px-1">
@@ -78,4 +78,4 @@ export const ProjectsList = () => {
       </div>
     </div>
   );
-};
+}

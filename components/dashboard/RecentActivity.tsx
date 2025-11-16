@@ -1,4 +1,4 @@
-export const RecentActivity = () => {
+export function RecentActivity() {
   return (
     <div>
       <h2 className="text-text-primary text-xl font-bold mb-4 px-1">Recent Activity</h2>
@@ -87,4 +87,4 @@ export const RecentActivity = () => {
       </div>
     </div>
   );
-};
+}

@@ -9,7 +9,6 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "VulnScanner",
   description: "Illuminate Your Web Security",
 };
 

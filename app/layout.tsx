@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import QueryProvider from "@/components/QueryProvider";
 
@@ -31,7 +30,6 @@ export default function RootLayout({
       <body className={`${spaceGrotesk.variable} bg-background-dark font-display text-body-text`}>
         <QueryProvider>
           <div className="relative flex min-h-screen w-full flex-col">
-            <Header />
             <main className="w-full grow">{children}</main>
             <Footer />
           </div>

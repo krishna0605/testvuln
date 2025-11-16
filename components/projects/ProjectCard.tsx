@@ -16,24 +16,24 @@ const ProjectCard = ({ project }: { project: any }) => {
       <div className="mt-2 flex items-center gap-4">
         <div className="flex items-center gap-1.5">
           <span className="h-2 w-2 rounded-full bg-red-500"></span>
-          <span className="font-medium text-white">{project.vulnerabilities.critical}</span>
+          <span className="font-medium text-white">{project.vulnerabilities?.critical || 0}</span>
           <span className="text-xs text-[#A0A0B0]">Critical</span>
         </div>
         <div className="flex items-center gap-1.5">
           <span className="h-2 w-2 rounded-full bg-orange-500"></span>
-          <span className="font-medium text-white">{project.vulnerabilities.high}</span>
+          <span className="font-medium text-white">{project.vulnerabilities?.high || 0}</span>
           <span className="text-xs text-[#A0A0B0]">High</span>
         </div>
         <div className="flex items-center gap-1.5">
           <span className="h-2 w-2 rounded-full bg-yellow-500"></span>
-          <span className="font-medium text-white">{project.vulnerabilities.medium}</span>
+          <span className="font-medium text-white">{project.vulnerabilities?.medium || 0}</span>
           <span className="text-xs text-[#A0A0B0]">Medium</span>
         </div>
       </div>
       <div className="mt-6 flex items-center justify-between">
         <div className="flex -space-x-2">
-          {project.team.map((member: any, index: number) => (
-            <div key={index} className="size-8 rounded-full border-2 border-background-dark bg-cover" style={{ backgroundImage: `url('${member.avatar}')` }}></div>
+          {project.team.map((avatar: string, index: number) => (
+            <div key={index} className="size-8 rounded-full border-2 border-background-dark bg-cover" style={{ backgroundImage: `url('${avatar}')` }}></div>
           ))}
         </div>
         <div className="flex items-center gap-1">

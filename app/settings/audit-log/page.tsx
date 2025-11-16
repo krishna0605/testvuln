@@ -44,31 +44,80 @@ const AuditLogSettingsPage = () => {
             <table className="min-w-full divide-y divide-white/10">
               <thead className="bg-white/5">
                 <tr>
-                  <th className="px-4 py-3 text-left text-xs font-medium text-text-body uppercase tracking-wider">
+                  <th className="px-4 py-3 text-left text-xs font-medium text-text-body/70 uppercase tracking-wider">
                     <a className="group inline-flex items-center gap-1" href="#">
                       Timestamp
                       <span className="material-symbols-outlined text-text-body/50 group-hover:text-text-body" style={{ fontSize: '16px' }}>arrow_downward</span>
                     </a>
                   </th>
-                  <th className="px-4 py-3 text-left text-xs font-medium text-text-body uppercase tracking-wider">
+                  <th className="px-4 py-3 text-left text-xs font-medium text-text-body/70 uppercase tracking-wider">
                     <a className="group inline-flex items-center gap-1" href="#">
                       User
                       <span className="material-symbols-outlined text-text-body/50 group-hover:text-text-body" style={{ fontSize: '16px' }}>unfold_more</span>
                     </a>
                   </th>
-                  <th className="px-4 py-3 text-left text-xs font-medium text-text-body uppercase tracking-wider">
+                  <th className="px-4 py-3 text-left text-xs font-medium text-text-body/70 uppercase tracking-wider">
                     <a className="group inline-flex items-center gap-1" href="#">
                       Action
                       <span className="material-symbols-outlined text-text-body/50 group-hover:text-text-body" style={{ fontSize: '16px' }}>unfold_more</span>
                     </a>
                   </th>
-                  <th className="px-4 py-3 text-left text-xs font-medium text-text-body uppercase tracking-wider">Resource</th>
-                  <th className="px-4 py-3 text-left text-xs font-medium text-text-body uppercase tracking-wider">IP Address</th>
-                  <th className="px-4 py-3 text-left text-xs font-medium text-text-body uppercase tracking-wider">Status</th>
+                  <th className="px-4 py-3 text-left text-xs font-medium text-text-body/70 uppercase tracking-wider">Resource</th>
+                  <th className="px-4 py-3 text-left text-xs font-medium text-text-body/70 uppercase tracking-wider">IP Address</th>
+                  <th className="px-4 py-3 text-left text-xs font-medium text-text-body/70 uppercase tracking-wider">Status</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/10">
-                {/* Audit log rows */}
+                <tr className="hover:bg-white/5 transition-colors">
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-body">2023-10-27 14:35:01</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-heading">alex.doe@example.com</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-heading">Logged in</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-body">-</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-body">192.168.1.101</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm">
+                    <span className="inline-flex items-center rounded-full bg-green-500/10 px-2.5 py-0.5 text-xs font-medium text-green-400" style={{ boxShadow: '0 0 10px rgba(4, 120, 87, 0.5)' }}>Success</span>
+                  </td>
+                </tr>
+                <tr className="hover:bg-white/5 transition-colors">
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-body">2023-10-27 14:32:15</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-heading">jane.smith@example.com</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-heading">Created project 'WebAppAlpha'</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-body">Project: WebAppAlpha</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-body">203.0.113.45</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm">
+                    <span className="inline-flex items-center rounded-full bg-green-500/10 px-2.5 py-0.5 text-xs font-medium text-green-400" style={{ boxShadow: '0 0 10px rgba(4, 120, 87, 0.5)' }}>Success</span>
+                  </td>
+                </tr>
+                <tr className="hover:bg-white/5 transition-colors">
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-body">2023-10-27 14:30:02</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-heading">jane.smith@example.com</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-heading">Started scan on 'WebAppAlpha'</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-body">Scan: 123e4567-e89b</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-body">203.0.113.45</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm">
+                    <span className="inline-flex items-center rounded-full bg-green-500/10 px-2.5 py-0.5 text-xs font-medium text-green-400" style={{ boxShadow: '0 0 10px rgba(4, 120, 87, 0.5)' }}>Success</span>
+                  </td>
+                </tr>
+                <tr className="hover:bg-white/5 transition-colors">
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-body">2023-10-26 18:05:41</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-heading">admin@vulnscanner.io</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-heading">User role changed for jane@example.com</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-body">User: jane@example.com</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-body">198.51.100.2</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm">
+                    <span className="inline-flex items-center rounded-full bg-yellow-500/10 px-2.5 py-0.5 text-xs font-medium text-yellow-400" style={{ boxShadow: '0 0 10px rgba(202, 138, 4, 0.5)' }}>Warning</span>
+                  </td>
+                </tr>
+                <tr className="hover:bg-white/5 transition-colors">
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-body">2023-10-26 11:15:20</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-heading">unknown@user.com</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-heading">Failed login attempt</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-body">-</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-text-body">104.28.243.123</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm">
+                    <span className="inline-flex items-center rounded-full bg-red-500/10 px-2.5 py-0.5 text-xs font-medium text-red-400" style={{ boxShadow: '0 0 10px rgba(153, 27, 27, 0.5)' }}>Failed</span>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>

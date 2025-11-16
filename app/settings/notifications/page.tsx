@@ -103,7 +103,7 @@ const NotificationsSettingsPage = () => {
           <button className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-transparent border border-white/20 text-text-heading text-sm font-medium hover:bg-white/10 transition-colors">
             <span className="truncate">Cancel</span>
           </button>
-          <button className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary text-white text-sm font-medium transition-all duration-300 hover:bg-primary/90 hover:shadow-cyan-glow disabled:bg-primary/50 disabled:cursor-not-allowed disabled:shadow-none" disabled>
+          <button className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary text-white text-sm font-medium transition-all duration-300 hover:bg-primary/90 hover:shadow-cyan-glow">
             <span className="truncate">Save Preferences</span>
           </button>
         </div>

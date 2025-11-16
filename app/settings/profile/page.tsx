@@ -82,7 +82,7 @@ const ProfileSettingsPage = () => {
           <button className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-transparent border border-white/20 text-text-heading text-sm font-medium hover:bg-white/10 transition-colors">
             <span className="truncate">Cancel</span>
           </button>
-          <button className="disabled:opacity-50 disabled:cursor-not-allowed flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-medium transition-all hover:bg-primary/90 hover:shadow-glow focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-dark" disabled>
+          <button className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-medium transition-all hover:bg-primary/90 hover:shadow-glow focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-dark">
             <span className="truncate">Save Profile</span>
           </button>
         </div>

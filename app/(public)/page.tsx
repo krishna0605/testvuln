@@ -1,7 +1,12 @@
-import HeroSection from "@/components/HeroSection";
-import FeaturesSection from "@/components/FeaturesSection";
-import ServicesSection from "@/components/ServicesSection";
 import CTASection from "@/components/CTASection";
+import FeaturesSection from "@/components/FeaturesSection";
+import HeroSection from "@/components/HeroSection";
+import ServicesSection from "@/components/ServicesSection";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "VulnScanner - Illuminate Your Web Security",
+};
 
 const HomePage = () => {
   return (

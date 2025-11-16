@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import FindingCard from '@/app/components/reports/FindingCard';
+import FindingCard from '@/components/reports/FindingCard';
 
 const findings = [
   {

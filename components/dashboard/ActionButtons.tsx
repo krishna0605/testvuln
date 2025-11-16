@@ -1,4 +1,4 @@
-export const ActionButtons = () => {
+export function ActionButtons() {
   return (
     <div className="flex flex-shrink-0 gap-3">
       <button className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-wide transition-all duration-300 glow-on-hover">
@@ -10,4 +10,4 @@ export const ActionButtons = () => {
       </button>
     </div>
   );
-};
+}

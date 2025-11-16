@@ -34,7 +34,81 @@ const TeamManagementSettingsPage = () => {
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/10">
-                {/* Team members rows */}
+                <tr className="hover:bg-white/5 transition-colors">
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <div className="flex items-center gap-4">
+                      <div className="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 flex-shrink-0" style={{ backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuBIiwNuOx_OUxvYzCUQ5OF8FulHehtOwWtvXaTYghMXARcEM9d3QigZSiJzhUP1NT8R9vslrn0hM9a98Zp7EaqAxH4qihz-FNZS7glM1sCKhMJUgQ_nvQWydGteara6m817glvwCsZ_0K1CF15lwi8HjAlNJ-3Z7VB2d6pwM0EC3Shs5R2DHqkPkuPtG1OFDmy1kCS4tC58IQowau0tnBZzxNCeBFG-pqrjjh7IzaPLVLOSzYHye9px2hNNbRJRBperUphDL00jtHY")` }}></div>
+                      <div className="text-sm font-medium text-text-heading">Alex Doe</div>
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm">alex.doe@example.com</td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/20 text-primary">Admin</span>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <div className="flex items-center gap-2">
+                      <div className="size-2 rounded-full bg-green-500 shadow-green-glow"></div>
+                      <span className="text-sm text-green-400">Active</span>
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm">2 hours ago</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                    <div className="flex items-center gap-4">
+                      <button aria-label="Edit Role" className="text-text-body hover:text-text-heading transition-colors"><span className="material-symbols-outlined" style={{ fontSize: '20px' }}>settings</span></button>
+                      <button aria-label="Remove Member" className="text-text-body hover:text-red-500 transition-colors"><span className="material-symbols-outlined" style={{ fontSize: '20px' }}>delete</span></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr className="hover:bg-white/5 transition-colors">
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <div className="flex items-center gap-4">
+                      <div className="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 flex-shrink-0" style={{ backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuAzMBACYoGQ8ACxNjMfGXuZ5Pn3OBcNWxwTe9SJmZ1XcT8KDHhJtbeSt0EGEcIy62hEst6Et1HOmTQJRN49bbWhef4mfTvpuyJypumN2SNfK9-NLOO6uoO5CJof4EIYJQjl0HPxiWH5gk8cZH6-QrcVc9mkIXJABauTxQaSn2dZY_EY3bSrW6WzMawaYvzTbXWnnn4BvxRHfx_4xMSPlMztMp_LTyv8PP0wVL9Xm-U4LwpM_E1MkLRuofQ5ZLQI9Jnfn4yq9db_EaQ")` }}></div>
+                      <div className="text-sm font-medium text-text-heading">Jane Smith</div>
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm">jane.smith@example.com</td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-500/20 text-yellow-400">Editor</span>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <div className="flex items-center gap-2">
+                      <div className="size-2 rounded-full bg-green-500 shadow-green-glow"></div>
+                      <span className="text-sm text-green-400">Active</span>
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm">1 day ago</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                    <div className="flex items-center gap-4">
+                      <button aria-label="Edit Role" className="text-text-body hover:text-text-heading transition-colors"><span className="material-symbols-outlined" style={{ fontSize: '20px' }}>settings</span></button>
+                      <button aria-label="Remove Member" className="text-text-body hover:text-red-500 transition-colors"><span className="material-symbols-outlined" style={{ fontSize: '20px' }}>delete</span></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr className="hover:bg-white/5 transition-colors">
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <div className="flex items-center gap-4">
+                      <div className="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 flex-shrink-0" style={{ backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuAzMBACYoGQ8ACxNjMfGXuZ5Pn3OBcNWxwTe9SJmZ1XcT8KDHhJtbeSt0EGEcIy62hEst6Et1HOmTQJRN49bbWhef4mfTvpuyJypumN2SNfK9-NLOO6uoO5CJof4EIYJQjl0HPxiWH5gk8cZH6-QrcVc9mkIXJABauTxQaSn2dZY_EY3bSrW6WzMawaYvzTbXWnnn4BvxRHfx_4xMSPlMztMp_LTyv8PP0wVL9Xm-U4LwpM_E1MkLRuofQ5ZLQI9Jnfn4yq9db_EaQ")` }}></div>
+                      <div className="text-sm font-medium text-text-heading">Sam Wilson</div>
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm">sam.wilson@example.com</td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-500/20 text-gray-400">Viewer</span>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <div className="flex items-center gap-2">
+                      <div className="size-2 rounded-full bg-yellow-500 shadow-yellow-glow"></div>
+                      <span className="text-sm text-yellow-400">Pending Invitation</span>
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm">Never</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                    <div className="flex items-center gap-4">
+                      <button aria-label="Edit Role" className="text-text-body hover:text-text-heading transition-colors"><span className="material-symbols-outlined" style={{ fontSize: '20px' }}>settings</span></button>
+                      <button aria-label="Remove Member" className="text-text-body hover:text-red-500 transition-colors"><span className="material-symbols-outlined" style={{ fontSize: '20px' }}>delete</span></button>
+                    </div>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>

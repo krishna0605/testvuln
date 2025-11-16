@@ -1,4 +1,4 @@
-export const SummaryCards = () => {
+export function SummaryCards() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
       <div className="flex flex-col gap-2 rounded-lg p-6 glass-card">
@@ -39,4 +39,4 @@ export const SummaryCards = () => {
       </div>
     </div>
   );
-};
+}

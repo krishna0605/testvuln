@@ -1,14 +1,14 @@
 import Link from 'next/link';
-import VulnerabilityDetails from '@/app/components/vulnerabilities/VulnerabilityDetails';
-import EvidenceTabs from '@/app/components/vulnerabilities/EvidenceTabs';
-import PoCPanel from '@/app/components/vulnerabilities/PoCPanel';
-import AffectedEndpoints from '@/app/components/vulnerabilities/AffectedEndpoints';
-import LeftNavTabs from '@/app/components/vulnerabilities/LeftNavTabs';
-import QuickStats from '@/app/components/vulnerabilities/QuickStats';
-import Actions from '@/app/components/vulnerabilities/Actions';
-import RemediationPanel from '@/app/components/vulnerabilities/RemediationPanel';
-import ReferencesPanel from '@/app/components/vulnerabilities/ReferencesPanel';
-import FindingDetails from '@/app/components/vulnerabilities/FindingDetails';
+import VulnerabilityDetails from '@/components/vulnerabilities/VulnerabilityDetails';
+import EvidenceTabs from '@/components/vulnerabilities/EvidenceTabs';
+import PoCPanel from '@/components/vulnerabilities/PoCPanel';
+import AffectedEndpoints from '@/components/vulnerabilities/AffectedEndpoints';
+import LeftNavTabs from '@/components/vulnerabilities/LeftNavTabs';
+import QuickStats from '@/components/vulnerabilities/QuickStats';
+import Actions from '@/components/vulnerabilities/Actions';
+import RemediationPanel from '@/components/vulnerabilities/RemediationPanel';
+import ReferencesPanel from '@/components/vulnerabilities/ReferencesPanel';
+import FindingDetails from '@/components/vulnerabilities/FindingDetails';
 
 const VulnerabilityDetailsPage = () => {
   return (
